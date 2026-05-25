@@ -1,0 +1,1001 @@
+customer_id,gender,age,province,segment,register_date
+C000001,Male,19,Khon Kaen,Premium,2026-04-05
+C000002,Male,32,Nonthaburi,SME,2025-08-04
+C000003,Male,61,Khon Kaen,SME,2025-03-25
+C000004,Male,55,Chiang Mai,Mass,2026-03-01
+C000005,Male,23,Nonthaburi,Mass,2024-05-26
+C000006,Male,53,Nonthaburi,SME,2025-09-13
+C000007,Female,32,Chiang Mai,SME,2024-06-15
+C000008,Female,69,Phuket,Mass,2025-12-29
+C000009,Male,62,Chiang Mai,Premium,2025-12-05
+C000010,Female,27,Nonthaburi,Premium,2025-01-17
+C000011,Male,23,Chiang Mai,Mass,2025-11-26
+C000012,Female,72,Pathum Thani,SME,2024-06-27
+C000013,Female,69,Bangkok,SME,2024-10-13
+C000014,Female,52,Bangkok,Premium,2026-04-15
+C000015,Male,53,Pathum Thani,SME,2024-10-27
+C000016,Female,54,Nonthaburi,SME,2026-02-27
+C000017,Male,20,Khon Kaen,Mass,2025-06-05
+C000018,Female,23,Phuket,Mass,2025-03-11
+C000019,Male,42,Pathum Thani,Premium,2025-09-18
+C000020,Female,28,Pathum Thani,Premium,2026-01-05
+C000021,Male,60,Pathum Thani,SME,2024-11-26
+C000022,Male,56,Khon Kaen,Mass,2026-04-22
+C000023,Male,28,Chiang Mai,Premium,2025-09-07
+C000024,Female,58,Khon Kaen,SME,2025-05-14
+C000025,Male,61,Pathum Thani,Mass,2025-11-09
+C000026,Male,70,Bangkok,Premium,2024-06-08
+C000027,Female,35,Bangkok,Mass,2024-09-18
+C000028,Female,31,Khon Kaen,Premium,2026-05-21
+C000029,Female,74,Khon Kaen,Premium,2024-06-02
+C000030,Male,34,Nonthaburi,Mass,2025-05-12
+C000031,Female,65,Chonburi,Premium,2026-01-17
+C000032,Female,41,Nonthaburi,Mass,2025-06-24
+C000033,Female,23,Phuket,Mass,2024-07-20
+C000034,Male,27,Khon Kaen,Mass,2025-11-02
+C000035,Female,56,Bangkok,Premium,2024-08-03
+C000036,Female,56,Chiang Mai,SME,2026-01-02
+C000037,Female,53,Phuket,Mass,2025-02-16
+C000038,Male,61,Chonburi,Premium,2025-11-07
+C000039,Female,25,Pathum Thani,Premium,2026-01-17
+C000040,Male,47,Bangkok,SME,2026-03-10
+C000041,Female,50,Phuket,Mass,2025-11-20
+C000042,Male,73,Khon Kaen,Premium,2024-07-04
+C000043,Male,27,Pathum Thani,Mass,2024-08-28
+C000044,Male,56,Pathum Thani,Premium,2024-06-18
+C000045,Male,25,Pathum Thani,Premium,2024-07-04
+C000046,Male,21,Nonthaburi,SME,2025-07-22
+C000047,Male,23,Khon Kaen,Premium,2024-06-20
+C000048,Male,66,Chonburi,Mass,2024-10-08
+C000049,Male,60,Chiang Mai,SME,2024-08-04
+C000050,Male,34,Chonburi,SME,2025-03-06
+C000051,Female,31,Chonburi,SME,2024-11-28
+C000052,Male,63,Pathum Thani,Premium,2025-03-11
+C000053,Female,46,Chonburi,Premium,2026-04-17
+C000054,Male,33,Nonthaburi,Mass,2026-01-18
+C000055,Female,19,Chonburi,SME,2025-03-20
+C000056,Male,55,Nonthaburi,Mass,2026-02-14
+C000057,Male,63,Khon Kaen,Mass,2026-02-14
+C000058,Male,22,Bangkok,Premium,2026-05-10
+C000059,Male,50,Nonthaburi,Premium,2024-12-29
+C000060,Female,31,Chonburi,Mass,2026-01-13
+C000061,Female,33,Phuket,Premium,2025-05-22
+C000062,Female,30,Bangkok,Mass,2024-06-11
+C000063,Female,40,Chiang Mai,Premium,2025-05-27
+C000064,Female,73,Khon Kaen,Mass,2025-10-06
+C000065,Male,21,Chiang Mai,SME,2024-10-04
+C000066,Female,69,Phuket,Mass,2025-12-16
+C000067,Male,30,Nonthaburi,SME,2025-11-14
+C000068,Female,26,Chiang Mai,Mass,2024-08-07
+C000069,Female,47,Nonthaburi,Mass,2025-09-06
+C000070,Female,69,Phuket,SME,2025-09-11
+C000071,Male,21,Khon Kaen,SME,2025-12-30
+C000072,Male,23,Phuket,Mass,2025-02-01
+C000073,Male,44,Chiang Mai,Premium,2025-11-11
+C000074,Male,73,Chiang Mai,Mass,2024-09-20
+C000075,Male,42,Bangkok,Premium,2024-11-25
+C000076,Female,68,Phuket,Premium,2024-08-04
+C000077,Female,45,Khon Kaen,SME,2025-11-22
+C000078,Female,27,Nonthaburi,Premium,2024-06-21
+C000079,Male,21,Chonburi,SME,2026-01-22
+C000080,Male,65,Pathum Thani,Mass,2024-05-29
+C000081,Male,55,Chiang Mai,SME,2025-10-17
+C000082,Male,21,Chonburi,Mass,2025-08-10
+C000083,Male,22,Chonburi,Mass,2025-07-22
+C000084,Male,43,Bangkok,SME,2026-01-13
+C000085,Male,55,Chonburi,Mass,2025-06-29
+C000086,Male,44,Khon Kaen,SME,2024-08-13
+C000087,Female,34,Nonthaburi,SME,2025-05-03
+C000088,Female,33,Pathum Thani,Premium,2025-04-09
+C000089,Male,60,Khon Kaen,Premium,2024-06-30
+C000090,Female,38,Phuket,Mass,2026-01-02
+C000091,Male,47,Chonburi,SME,2025-06-19
+C000092,Male,22,Chonburi,Mass,2026-02-03
+C000093,Female,26,Pathum Thani,Mass,2025-11-21
+C000094,Male,41,Pathum Thani,Mass,2024-06-08
+C000095,Female,71,Chonburi,SME,2025-03-29
+C000096,Female,57,Phuket,SME,2025-08-27
+C000097,Male,60,Phuket,SME,2025-12-13
+C000098,Female,60,Bangkok,Mass,2025-04-07
+C000099,Female,25,Bangkok,SME,2024-12-17
+C000100,Male,35,Pathum Thani,SME,2025-11-28
+C000101,Male,63,Pathum Thani,Mass,2024-06-11
+C000102,Female,50,Chiang Mai,Premium,2025-07-20
+C000103,Male,23,Khon Kaen,Premium,2025-12-18
+C000104,Female,20,Bangkok,Premium,2025-01-13
+C000105,Male,58,Pathum Thani,Mass,2024-06-03
+C000106,Female,53,Khon Kaen,Premium,2024-12-15
+C000107,Male,25,Bangkok,SME,2025-12-09
+C000108,Male,52,Bangkok,Premium,2026-02-06
+C000109,Male,45,Nonthaburi,Mass,2024-12-14
+C000110,Female,41,Phuket,Mass,2024-11-28
+C000111,Female,31,Khon Kaen,Mass,2025-05-23
+C000112,Male,40,Phuket,SME,2025-06-23
+C000113,Female,57,Khon Kaen,Mass,2026-02-04
+C000114,Male,73,Nonthaburi,Mass,2024-07-21
+C000115,Female,19,Nonthaburi,SME,2024-12-14
+C000116,Female,68,Chiang Mai,SME,2025-06-28
+C000117,Male,35,Nonthaburi,SME,2024-10-10
+C000118,Male,42,Phuket,Mass,2024-12-11
+C000119,Female,32,Nonthaburi,Premium,2024-11-20
+C000120,Female,37,Phuket,Mass,2026-04-28
+C000121,Male,19,Khon Kaen,Mass,2024-09-08
+C000122,Female,39,Pathum Thani,Mass,2025-02-28
+C000123,Female,40,Khon Kaen,SME,2024-08-24
+C000124,Female,61,Phuket,SME,2024-10-11
+C000125,Female,19,Bangkok,Premium,2026-01-07
+C000126,Male,55,Pathum Thani,Mass,2026-01-31
+C000127,Male,56,Chiang Mai,Premium,2026-01-01
+C000128,Female,45,Chonburi,SME,2025-01-13
+C000129,Male,42,Chonburi,Mass,2026-01-17
+C000130,Female,20,Khon Kaen,Premium,2025-07-24
+C000131,Male,51,Phuket,SME,2025-04-15
+C000132,Male,41,Chiang Mai,Mass,2024-09-07
+C000133,Female,57,Pathum Thani,SME,2024-09-28
+C000134,Male,64,Pathum Thani,SME,2026-01-13
+C000135,Female,60,Chiang Mai,Premium,2026-02-04
+C000136,Female,62,Pathum Thani,SME,2026-01-27
+C000137,Male,30,Chiang Mai,SME,2024-06-28
+C000138,Female,61,Khon Kaen,Mass,2025-02-26
+C000139,Female,43,Chonburi,Mass,2025-07-14
+C000140,Female,36,Nonthaburi,Premium,2024-08-11
+C000141,Female,47,Chiang Mai,Premium,2025-05-08
+C000142,Male,50,Chiang Mai,SME,2025-04-14
+C000143,Male,60,Bangkok,Premium,2026-04-07
+C000144,Female,23,Phuket,Mass,2025-01-01
+C000145,Female,32,Phuket,Mass,2025-06-06
+C000146,Male,19,Bangkok,Mass,2025-11-21
+C000147,Female,57,Phuket,Mass,2025-12-20
+C000148,Female,44,Khon Kaen,SME,2024-05-29
+C000149,Male,63,Khon Kaen,Premium,2026-03-05
+C000150,Female,43,Nonthaburi,Mass,2025-01-08
+C000151,Male,75,Phuket,Mass,2025-09-21
+C000152,Female,32,Nonthaburi,SME,2025-01-07
+C000153,Female,21,Chonburi,Mass,2024-07-29
+C000154,Male,47,Nonthaburi,Premium,2025-09-17
+C000155,Female,66,Chiang Mai,SME,2025-03-19
+C000156,Female,71,Chonburi,Premium,2026-05-19
+C000157,Male,65,Phuket,Premium,2025-02-25
+C000158,Female,34,Phuket,Mass,2025-11-02
+C000159,Female,67,Phuket,SME,2025-10-03
+C000160,Female,58,Nonthaburi,Premium,2025-05-31
+C000161,Female,22,Khon Kaen,Premium,2024-12-26
+C000162,Male,35,Pathum Thani,Premium,2025-11-22
+C000163,Male,26,Nonthaburi,Mass,2025-06-11
+C000164,Female,62,Nonthaburi,SME,2024-06-17
+C000165,Male,22,Chiang Mai,Premium,2025-04-20
+C000166,Female,52,Chiang Mai,Premium,2025-10-25
+C000167,Male,31,Phuket,Premium,2024-09-24
+C000168,Female,75,Phuket,SME,2025-12-02
+C000169,Male,72,Phuket,SME,2026-03-24
+C000170,Female,48,Bangkok,Premium,2026-03-17
+C000171,Female,66,Chiang Mai,Premium,2024-06-05
+C000172,Male,49,Nonthaburi,Premium,2025-08-13
+C000173,Female,49,Bangkok,Premium,2025-03-16
+C000174,Female,60,Khon Kaen,Premium,2025-12-27
+C000175,Male,71,Chiang Mai,Mass,2026-02-10
+C000176,Male,43,Chonburi,SME,2025-10-04
+C000177,Male,23,Khon Kaen,Premium,2026-03-26
+C000178,Male,73,Chiang Mai,Mass,2025-08-09
+C000179,Male,34,Chiang Mai,Premium,2025-09-01
+C000180,Male,47,Pathum Thani,Premium,2026-03-15
+C000181,Female,35,Phuket,Premium,2026-03-17
+C000182,Female,71,Bangkok,Premium,2025-10-22
+C000183,Male,65,Chonburi,Mass,2026-01-07
+C000184,Female,32,Khon Kaen,Mass,2026-01-25
+C000185,Male,66,Bangkok,Mass,2024-10-30
+C000186,Male,71,Bangkok,SME,2026-04-11
+C000187,Male,33,Nonthaburi,Premium,2024-08-28
+C000188,Male,54,Nonthaburi,Premium,2024-10-28
+C000189,Female,67,Pathum Thani,Mass,2025-11-08
+C000190,Male,67,Phuket,Mass,2025-02-10
+C000191,Female,24,Chonburi,Mass,2025-08-16
+C000192,Female,54,Khon Kaen,Premium,2026-03-19
+C000193,Female,63,Nonthaburi,Mass,2025-05-18
+C000194,Male,24,Khon Kaen,Premium,2026-02-09
+C000195,Male,68,Chonburi,Mass,2025-01-30
+C000196,Female,52,Chiang Mai,SME,2024-12-19
+C000197,Female,22,Chonburi,SME,2025-04-22
+C000198,Female,18,Phuket,Premium,2024-06-24
+C000199,Female,24,Chiang Mai,Premium,2026-02-07
+C000200,Female,63,Nonthaburi,Premium,2024-08-10
+C000201,Male,64,Chonburi,SME,2025-12-27
+C000202,Female,57,Phuket,SME,2025-05-18
+C000203,Female,47,Chiang Mai,SME,2025-09-02
+C000204,Female,38,Phuket,Mass,2025-05-06
+C000205,Male,35,Chiang Mai,Mass,2026-03-08
+C000206,Female,54,Chonburi,SME,2026-01-01
+C000207,Female,39,Bangkok,Premium,2024-08-22
+C000208,Female,29,Chiang Mai,Mass,2025-10-01
+C000209,Female,69,Pathum Thani,Premium,2024-12-26
+C000210,Female,74,Chonburi,SME,2024-12-06
+C000211,Female,53,Bangkok,SME,2026-02-27
+C000212,Male,23,Nonthaburi,SME,2024-12-31
+C000213,Female,49,Chonburi,Mass,2025-10-02
+C000214,Female,59,Khon Kaen,Premium,2026-02-28
+C000215,Female,68,Bangkok,Mass,2025-10-11
+C000216,Female,32,Chiang Mai,SME,2025-06-19
+C000217,Male,37,Khon Kaen,SME,2024-12-01
+C000218,Female,48,Chonburi,SME,2024-09-12
+C000219,Female,45,Khon Kaen,SME,2026-01-03
+C000220,Female,40,Khon Kaen,Premium,2025-01-13
+C000221,Female,37,Pathum Thani,Mass,2026-01-07
+C000222,Male,64,Nonthaburi,Premium,2025-12-15
+C000223,Male,65,Chonburi,SME,2025-10-16
+C000224,Male,30,Nonthaburi,SME,2025-06-02
+C000225,Female,35,Khon Kaen,SME,2026-03-21
+C000226,Female,24,Phuket,Mass,2025-09-20
+C000227,Female,32,Pathum Thani,Mass,2024-12-05
+C000228,Female,18,Khon Kaen,SME,2026-01-06
+C000229,Male,35,Bangkok,Mass,2024-11-23
+C000230,Female,62,Nonthaburi,SME,2026-03-04
+C000231,Female,24,Phuket,Mass,2026-01-14
+C000232,Female,48,Chiang Mai,Premium,2025-05-22
+C000233,Female,29,Bangkok,Premium,2025-08-02
+C000234,Female,25,Phuket,Mass,2026-05-08
+C000235,Female,49,Bangkok,SME,2026-02-11
+C000236,Male,27,Nonthaburi,SME,2026-03-27
+C000237,Female,23,Nonthaburi,Mass,2025-10-22
+C000238,Female,56,Chonburi,SME,2024-07-21
+C000239,Male,67,Chonburi,Premium,2025-10-06
+C000240,Female,46,Pathum Thani,SME,2025-06-11
+C000241,Female,37,Chonburi,SME,2024-07-05
+C000242,Male,57,Khon Kaen,Mass,2025-07-17
+C000243,Male,58,Nonthaburi,Premium,2025-11-03
+C000244,Male,28,Nonthaburi,Mass,2026-03-27
+C000245,Male,28,Bangkok,Premium,2025-06-05
+C000246,Female,62,Chonburi,Premium,2024-10-02
+C000247,Female,20,Nonthaburi,Premium,2026-01-30
+C000248,Female,62,Phuket,Premium,2025-04-26
+C000249,Male,61,Nonthaburi,Premium,2025-01-26
+C000250,Male,45,Bangkok,SME,2024-11-02
+C000251,Male,59,Nonthaburi,Premium,2025-05-24
+C000252,Male,22,Bangkok,Mass,2026-01-31
+C000253,Female,56,Khon Kaen,SME,2025-02-09
+C000254,Female,46,Bangkok,Premium,2025-08-28
+C000255,Female,62,Chiang Mai,Premium,2025-12-30
+C000256,Female,46,Bangkok,SME,2025-06-01
+C000257,Male,74,Chiang Mai,SME,2025-06-07
+C000258,Female,56,Pathum Thani,Mass,2025-09-22
+C000259,Male,32,Khon Kaen,SME,2026-04-09
+C000260,Male,66,Khon Kaen,Premium,2026-01-12
+C000261,Male,66,Phuket,Mass,2026-03-20
+C000262,Female,51,Khon Kaen,Premium,2025-08-21
+C000263,Female,29,Chonburi,Premium,2025-05-13
+C000264,Female,23,Chiang Mai,Premium,2024-09-06
+C000265,Female,39,Pathum Thani,SME,2026-01-12
+C000266,Male,72,Nonthaburi,Premium,2025-07-21
+C000267,Female,62,Chiang Mai,Premium,2025-05-23
+C000268,Female,70,Phuket,SME,2025-03-22
+C000269,Male,47,Bangkok,Premium,2025-04-19
+C000270,Female,38,Bangkok,Premium,2024-08-07
+C000271,Male,60,Phuket,SME,2026-04-24
+C000272,Female,44,Bangkok,Mass,2024-12-04
+C000273,Female,57,Phuket,Premium,2025-01-07
+C000274,Female,66,Bangkok,Mass,2025-02-07
+C000275,Female,53,Nonthaburi,Premium,2025-07-07
+C000276,Female,74,Khon Kaen,Premium,2024-10-31
+C000277,Male,19,Khon Kaen,SME,2024-06-14
+C000278,Male,63,Nonthaburi,Premium,2024-07-31
+C000279,Male,53,Chiang Mai,Mass,2025-04-14
+C000280,Male,71,Bangkok,Premium,2025-11-12
+C000281,Male,59,Phuket,Mass,2024-12-18
+C000282,Female,63,Pathum Thani,SME,2024-08-30
+C000283,Female,44,Phuket,Premium,2024-10-23
+C000284,Female,33,Chiang Mai,SME,2026-02-02
+C000285,Male,42,Nonthaburi,SME,2026-02-17
+C000286,Male,73,Bangkok,Premium,2025-06-28
+C000287,Female,39,Phuket,SME,2024-10-06
+C000288,Female,70,Bangkok,Premium,2026-03-30
+C000289,Female,71,Chonburi,SME,2025-03-12
+C000290,Female,73,Nonthaburi,Premium,2024-08-12
+C000291,Female,40,Pathum Thani,SME,2025-09-25
+C000292,Female,47,Pathum Thani,Mass,2024-12-16
+C000293,Male,54,Chiang Mai,Mass,2026-02-01
+C000294,Female,20,Pathum Thani,SME,2024-12-28
+C000295,Female,63,Phuket,Premium,2026-02-11
+C000296,Female,60,Phuket,SME,2025-10-31
+C000297,Male,49,Bangkok,Mass,2024-08-22
+C000298,Female,73,Bangkok,Premium,2024-12-31
+C000299,Male,51,Chiang Mai,Mass,2024-06-08
+C000300,Male,44,Phuket,SME,2025-04-10
+C000301,Male,22,Chiang Mai,Premium,2025-11-07
+C000302,Female,57,Khon Kaen,Premium,2025-06-14
+C000303,Male,72,Pathum Thani,SME,2025-06-10
+C000304,Female,38,Khon Kaen,SME,2025-11-14
+C000305,Female,73,Chonburi,Mass,2024-06-13
+C000306,Male,33,Khon Kaen,SME,2024-08-28
+C000307,Female,32,Khon Kaen,Mass,2025-11-02
+C000308,Female,24,Phuket,SME,2025-02-21
+C000309,Male,46,Nonthaburi,SME,2025-10-10
+C000310,Female,75,Bangkok,Mass,2025-11-29
+C000311,Female,68,Bangkok,Premium,2025-05-29
+C000312,Female,41,Chiang Mai,Mass,2025-11-22
+C000313,Male,51,Chiang Mai,SME,2025-03-09
+C000314,Male,28,Nonthaburi,Mass,2026-04-22
+C000315,Female,57,Khon Kaen,Mass,2026-04-19
+C000316,Female,55,Nonthaburi,Mass,2026-01-29
+C000317,Female,58,Pathum Thani,Premium,2025-07-16
+C000318,Female,60,Bangkok,Premium,2025-12-02
+C000319,Female,61,Chonburi,Mass,2026-01-16
+C000320,Male,46,Pathum Thani,SME,2025-09-21
+C000321,Female,58,Chiang Mai,SME,2025-01-08
+C000322,Female,47,Phuket,Premium,2024-08-21
+C000323,Male,42,Phuket,Premium,2024-09-06
+C000324,Male,33,Chiang Mai,SME,2026-03-14
+C000325,Female,54,Pathum Thani,SME,2024-08-03
+C000326,Female,19,Phuket,SME,2024-09-29
+C000327,Female,35,Bangkok,SME,2025-10-18
+C000328,Male,56,Khon Kaen,Premium,2026-01-13
+C000329,Female,67,Phuket,Mass,2025-07-27
+C000330,Female,32,Khon Kaen,Mass,2026-05-08
+C000331,Female,61,Phuket,SME,2025-10-07
+C000332,Male,58,Bangkok,SME,2024-09-07
+C000333,Male,37,Phuket,Premium,2025-04-28
+C000334,Male,55,Pathum Thani,SME,2025-05-02
+C000335,Male,23,Pathum Thani,Premium,2025-10-01
+C000336,Female,29,Nonthaburi,Mass,2026-05-21
+C000337,Female,51,Chonburi,Premium,2025-07-16
+C000338,Male,34,Phuket,Premium,2026-04-15
+C000339,Female,65,Phuket,Premium,2025-04-04
+C000340,Male,47,Bangkok,Mass,2024-06-23
+C000341,Male,73,Khon Kaen,SME,2025-04-22
+C000342,Female,72,Phuket,SME,2024-11-26
+C000343,Female,23,Phuket,Premium,2025-05-22
+C000344,Male,34,Chonburi,Mass,2025-11-18
+C000345,Female,41,Khon Kaen,SME,2025-12-31
+C000346,Female,55,Chiang Mai,SME,2025-02-06
+C000347,Female,24,Khon Kaen,Mass,2025-10-27
+C000348,Female,19,Chonburi,SME,2024-12-09
+C000349,Female,57,Nonthaburi,SME,2025-11-29
+C000350,Male,58,Phuket,Premium,2025-04-02
+C000351,Female,59,Chiang Mai,Mass,2026-04-03
+C000352,Male,20,Bangkok,Premium,2024-10-05
+C000353,Female,25,Bangkok,Mass,2025-04-10
+C000354,Male,42,Chiang Mai,Premium,2025-12-22
+C000355,Female,55,Khon Kaen,SME,2024-09-11
+C000356,Male,74,Chiang Mai,SME,2024-06-28
+C000357,Male,71,Chiang Mai,SME,2026-03-16
+C000358,Female,35,Bangkok,SME,2024-09-15
+C000359,Female,31,Chiang Mai,Premium,2026-02-18
+C000360,Male,72,Pathum Thani,Mass,2024-10-09
+C000361,Female,52,Khon Kaen,Premium,2026-04-01
+C000362,Male,43,Pathum Thani,Mass,2025-07-19
+C000363,Male,72,Phuket,Premium,2024-09-13
+C000364,Male,60,Nonthaburi,SME,2025-08-23
+C000365,Male,21,Phuket,Premium,2024-11-09
+C000366,Male,26,Phuket,SME,2025-09-12
+C000367,Male,22,Phuket,SME,2025-05-30
+C000368,Male,55,Nonthaburi,Mass,2026-01-09
+C000369,Female,67,Nonthaburi,SME,2024-08-09
+C000370,Male,35,Phuket,Mass,2025-12-20
+C000371,Male,52,Pathum Thani,Mass,2025-10-16
+C000372,Male,60,Phuket,Mass,2024-08-27
+C000373,Male,18,Pathum Thani,Mass,2024-07-20
+C000374,Female,19,Nonthaburi,Premium,2025-04-14
+C000375,Male,26,Khon Kaen,Premium,2025-04-06
+C000376,Male,65,Bangkok,Premium,2025-08-29
+C000377,Female,67,Pathum Thani,SME,2024-06-05
+C000378,Male,46,Chonburi,Mass,2025-10-09
+C000379,Male,64,Phuket,SME,2024-06-15
+C000380,Female,47,Khon Kaen,Mass,2024-06-05
+C000381,Male,48,Phuket,Premium,2024-09-10
+C000382,Female,61,Bangkok,Premium,2024-07-25
+C000383,Female,22,Bangkok,Premium,2026-02-25
+C000384,Male,22,Nonthaburi,Premium,2025-06-20
+C000385,Female,42,Chonburi,SME,2024-08-17
+C000386,Female,47,Chonburi,SME,2025-03-23
+C000387,Female,24,Phuket,SME,2026-04-02
+C000388,Male,72,Khon Kaen,SME,2026-02-08
+C000389,Male,45,Chiang Mai,Mass,2026-01-13
+C000390,Female,39,Phuket,Premium,2025-10-28
+C000391,Female,44,Khon Kaen,Mass,2024-12-18
+C000392,Female,45,Pathum Thani,SME,2025-08-30
+C000393,Female,41,Nonthaburi,SME,2026-04-08
+C000394,Female,22,Bangkok,Mass,2024-07-02
+C000395,Male,45,Bangkok,SME,2024-07-09
+C000396,Female,69,Nonthaburi,SME,2025-08-19
+C000397,Male,55,Chonburi,SME,2026-01-21
+C000398,Female,60,Bangkok,Premium,2025-11-21
+C000399,Female,73,Khon Kaen,Premium,2024-12-20
+C000400,Male,36,Chonburi,Premium,2025-11-25
+C000401,Female,24,Chonburi,SME,2025-11-29
+C000402,Male,27,Khon Kaen,Premium,2024-06-27
+C000403,Male,72,Bangkok,Premium,2026-01-30
+C000404,Female,25,Phuket,Premium,2024-08-11
+C000405,Male,69,Chiang Mai,SME,2024-05-26
+C000406,Male,56,Khon Kaen,SME,2025-06-18
+C000407,Female,19,Nonthaburi,Premium,2025-12-04
+C000408,Female,39,Pathum Thani,Mass,2025-01-18
+C000409,Male,73,Nonthaburi,SME,2026-04-07
+C000410,Female,22,Nonthaburi,SME,2024-09-12
+C000411,Male,23,Khon Kaen,SME,2025-07-19
+C000412,Male,42,Chiang Mai,Premium,2025-06-27
+C000413,Female,28,Pathum Thani,Premium,2025-11-24
+C000414,Female,67,Chonburi,SME,2025-11-20
+C000415,Male,74,Bangkok,Mass,2025-09-23
+C000416,Male,66,Chonburi,Mass,2024-10-15
+C000417,Male,35,Chiang Mai,SME,2025-03-19
+C000418,Female,49,Chonburi,Premium,2024-10-01
+C000419,Female,35,Nonthaburi,SME,2025-10-22
+C000420,Male,40,Chiang Mai,Mass,2024-06-25
+C000421,Female,61,Khon Kaen,SME,2025-03-08
+C000422,Female,51,Khon Kaen,Premium,2024-06-06
+C000423,Male,32,Chiang Mai,SME,2025-03-14
+C000424,Male,18,Nonthaburi,Premium,2024-08-19
+C000425,Male,67,Nonthaburi,Premium,2026-03-19
+C000426,Female,38,Bangkok,Mass,2025-04-30
+C000427,Female,65,Chiang Mai,Mass,2025-03-10
+C000428,Male,42,Chonburi,SME,2024-12-03
+C000429,Male,50,Chonburi,SME,2026-02-05
+C000430,Female,22,Chiang Mai,SME,2025-10-23
+C000431,Male,45,Bangkok,Premium,2025-11-10
+C000432,Male,73,Pathum Thani,SME,2025-10-19
+C000433,Female,54,Chiang Mai,SME,2025-12-14
+C000434,Female,36,Bangkok,Premium,2025-07-10
+C000435,Male,38,Nonthaburi,SME,2025-09-05
+C000436,Female,71,Khon Kaen,Premium,2025-06-08
+C000437,Male,45,Phuket,Mass,2025-01-20
+C000438,Male,45,Chonburi,Premium,2025-03-19
+C000439,Male,43,Phuket,Premium,2025-09-17
+C000440,Female,32,Pathum Thani,Mass,2024-12-13
+C000441,Male,50,Khon Kaen,Mass,2025-07-26
+C000442,Male,75,Phuket,Premium,2026-02-09
+C000443,Female,64,Phuket,SME,2025-07-02
+C000444,Male,33,Bangkok,Mass,2024-06-14
+C000445,Female,30,Nonthaburi,SME,2025-07-01
+C000446,Male,66,Phuket,SME,2025-06-09
+C000447,Male,29,Phuket,SME,2026-04-30
+C000448,Female,47,Phuket,SME,2024-09-21
+C000449,Female,61,Chonburi,SME,2024-11-16
+C000450,Female,73,Khon Kaen,Premium,2024-09-10
+C000451,Male,46,Bangkok,Premium,2026-02-01
+C000452,Female,58,Pathum Thani,Premium,2025-08-13
+C000453,Male,40,Chonburi,Mass,2026-05-19
+C000454,Female,47,Chiang Mai,Mass,2024-10-04
+C000455,Male,41,Phuket,Premium,2025-01-12
+C000456,Male,59,Phuket,Mass,2024-12-07
+C000457,Female,47,Chonburi,SME,2024-07-13
+C000458,Male,46,Phuket,SME,2025-09-20
+C000459,Male,38,Chonburi,Premium,2025-12-21
+C000460,Male,21,Chiang Mai,Mass,2025-03-20
+C000461,Female,63,Bangkok,SME,2026-02-08
+C000462,Male,20,Nonthaburi,SME,2024-12-30
+C000463,Female,46,Chonburi,SME,2024-09-27
+C000464,Male,41,Pathum Thani,Premium,2025-09-01
+C000465,Female,44,Phuket,Premium,2025-03-27
+C000466,Male,68,Khon Kaen,SME,2025-08-06
+C000467,Female,22,Pathum Thani,Mass,2026-02-01
+C000468,Female,36,Pathum Thani,SME,2026-04-26
+C000469,Male,39,Bangkok,SME,2024-09-04
+C000470,Male,40,Pathum Thani,SME,2025-08-09
+C000471,Female,26,Chonburi,SME,2025-02-15
+C000472,Male,37,Chonburi,Premium,2025-03-13
+C000473,Female,70,Nonthaburi,SME,2025-11-30
+C000474,Male,59,Khon Kaen,Premium,2025-11-01
+C000475,Female,19,Pathum Thani,Premium,2026-03-02
+C000476,Male,31,Pathum Thani,Premium,2025-12-16
+C000477,Male,32,Nonthaburi,Mass,2026-02-13
+C000478,Male,36,Phuket,Mass,2025-04-07
+C000479,Male,60,Pathum Thani,SME,2024-10-12
+C000480,Male,56,Chiang Mai,Mass,2025-05-17
+C000481,Male,29,Phuket,SME,2026-03-31
+C000482,Male,64,Chiang Mai,Mass,2026-03-11
+C000483,Female,41,Khon Kaen,SME,2025-02-18
+C000484,Male,46,Chonburi,Premium,2025-08-17
+C000485,Female,32,Chonburi,Mass,2024-05-25
+C000486,Female,69,Phuket,Premium,2025-10-11
+C000487,Male,41,Khon Kaen,SME,2024-11-08
+C000488,Female,47,Phuket,Premium,2025-12-25
+C000489,Female,50,Chonburi,Premium,2026-05-22
+C000490,Male,70,Nonthaburi,SME,2024-06-10
+C000491,Male,73,Pathum Thani,Mass,2025-11-09
+C000492,Female,73,Pathum Thani,SME,2026-05-10
+C000493,Male,63,Phuket,SME,2024-07-22
+C000494,Male,36,Bangkok,Mass,2024-12-26
+C000495,Female,46,Chonburi,Mass,2024-08-10
+C000496,Female,23,Nonthaburi,Premium,2025-04-02
+C000497,Female,19,Chiang Mai,Mass,2024-11-11
+C000498,Female,50,Pathum Thani,Mass,2026-03-30
+C000499,Female,23,Pathum Thani,Mass,2024-07-12
+C000500,Male,38,Bangkok,SME,2025-12-23
+C000501,Female,68,Nonthaburi,Mass,2024-11-16
+C000502,Male,36,Phuket,Premium,2024-06-21
+C000503,Male,66,Khon Kaen,Premium,2024-08-17
+C000504,Female,57,Bangkok,Mass,2025-11-27
+C000505,Male,34,Nonthaburi,Mass,2025-11-15
+C000506,Female,25,Phuket,Premium,2025-04-13
+C000507,Male,37,Bangkok,Mass,2024-06-10
+C000508,Male,44,Khon Kaen,SME,2025-11-21
+C000509,Female,22,Bangkok,Premium,2025-06-24
+C000510,Male,58,Chonburi,SME,2026-03-03
+C000511,Male,63,Nonthaburi,Premium,2024-08-13
+C000512,Female,18,Chonburi,Premium,2025-04-28
+C000513,Male,54,Chiang Mai,Mass,2024-09-27
+C000514,Male,51,Pathum Thani,Mass,2024-08-02
+C000515,Male,42,Phuket,Premium,2024-10-02
+C000516,Male,58,Chiang Mai,Premium,2024-06-13
+C000517,Female,65,Bangkok,Premium,2024-11-02
+C000518,Male,40,Nonthaburi,SME,2024-09-23
+C000519,Male,67,Chonburi,SME,2026-03-29
+C000520,Female,26,Bangkok,Premium,2026-05-10
+C000521,Female,70,Khon Kaen,Mass,2025-02-15
+C000522,Female,62,Chiang Mai,SME,2026-05-18
+C000523,Male,69,Nonthaburi,Mass,2026-03-31
+C000524,Female,20,Pathum Thani,Mass,2024-07-21
+C000525,Male,68,Nonthaburi,Mass,2025-02-02
+C000526,Female,37,Chonburi,Premium,2024-09-04
+C000527,Female,34,Bangkok,SME,2025-03-04
+C000528,Male,36,Pathum Thani,Mass,2024-10-20
+C000529,Female,35,Bangkok,Premium,2024-06-25
+C000530,Female,74,Chiang Mai,SME,2024-12-25
+C000531,Female,75,Chiang Mai,Premium,2026-03-10
+C000532,Male,49,Khon Kaen,Premium,2026-04-13
+C000533,Female,69,Chonburi,Premium,2025-10-02
+C000534,Male,64,Chiang Mai,Mass,2025-02-19
+C000535,Female,56,Phuket,Mass,2024-08-27
+C000536,Female,38,Bangkok,Mass,2024-12-02
+C000537,Female,60,Pathum Thani,Premium,2024-09-22
+C000538,Female,56,Khon Kaen,Premium,2025-04-30
+C000539,Male,62,Chiang Mai,Premium,2024-06-12
+C000540,Female,20,Khon Kaen,Premium,2025-05-31
+C000541,Female,35,Khon Kaen,Mass,2024-10-25
+C000542,Male,60,Khon Kaen,Premium,2025-02-28
+C000543,Female,50,Phuket,SME,2025-10-24
+C000544,Male,19,Nonthaburi,SME,2025-10-12
+C000545,Female,20,Nonthaburi,Mass,2024-11-08
+C000546,Male,67,Khon Kaen,Premium,2026-03-12
+C000547,Female,42,Chonburi,Mass,2025-05-03
+C000548,Male,61,Chiang Mai,Premium,2025-11-10
+C000549,Female,46,Phuket,Mass,2025-08-21
+C000550,Male,51,Pathum Thani,Premium,2024-07-31
+C000551,Female,59,Pathum Thani,Mass,2025-08-19
+C000552,Male,19,Khon Kaen,Mass,2024-09-09
+C000553,Female,51,Chiang Mai,SME,2025-05-01
+C000554,Male,34,Phuket,Premium,2025-09-05
+C000555,Female,31,Chonburi,Premium,2024-11-30
+C000556,Female,30,Bangkok,Mass,2025-11-16
+C000557,Male,46,Nonthaburi,SME,2024-07-30
+C000558,Female,23,Phuket,SME,2025-06-26
+C000559,Female,60,Pathum Thani,SME,2025-10-13
+C000560,Male,53,Chonburi,Premium,2025-08-01
+C000561,Female,72,Nonthaburi,SME,2026-02-17
+C000562,Male,68,Pathum Thani,SME,2024-11-06
+C000563,Male,25,Nonthaburi,Mass,2026-01-20
+C000564,Male,68,Chiang Mai,Mass,2025-03-24
+C000565,Female,53,Chonburi,Premium,2025-06-06
+C000566,Female,69,Chonburi,Mass,2024-10-28
+C000567,Male,22,Pathum Thani,Premium,2025-07-18
+C000568,Female,51,Chiang Mai,Premium,2025-09-08
+C000569,Male,26,Pathum Thani,SME,2026-03-05
+C000570,Male,46,Chiang Mai,SME,2024-05-25
+C000571,Female,26,Phuket,SME,2026-03-07
+C000572,Male,67,Nonthaburi,Premium,2025-04-19
+C000573,Male,71,Bangkok,SME,2025-02-26
+C000574,Male,37,Nonthaburi,Mass,2025-09-16
+C000575,Female,63,Nonthaburi,Premium,2026-04-10
+C000576,Female,72,Bangkok,Premium,2026-01-05
+C000577,Male,58,Chonburi,Premium,2025-02-10
+C000578,Male,58,Pathum Thani,SME,2024-07-31
+C000579,Male,50,Khon Kaen,Mass,2026-01-04
+C000580,Male,28,Khon Kaen,SME,2025-08-30
+C000581,Female,71,Chonburi,Mass,2025-12-31
+C000582,Male,23,Bangkok,SME,2024-09-17
+C000583,Female,59,Nonthaburi,SME,2025-02-16
+C000584,Female,57,Khon Kaen,Mass,2025-01-12
+C000585,Female,74,Khon Kaen,SME,2025-11-14
+C000586,Female,59,Pathum Thani,Premium,2026-03-26
+C000587,Male,69,Phuket,SME,2025-07-27
+C000588,Female,37,Chiang Mai,Mass,2025-08-03
+C000589,Male,28,Chiang Mai,Premium,2025-01-02
+C000590,Female,47,Nonthaburi,Premium,2026-05-17
+C000591,Male,38,Phuket,SME,2025-02-19
+C000592,Female,64,Phuket,Premium,2024-06-25
+C000593,Female,26,Phuket,Premium,2025-03-16
+C000594,Male,38,Nonthaburi,Premium,2025-01-13
+C000595,Male,35,Chiang Mai,Mass,2025-05-16
+C000596,Male,24,Bangkok,Premium,2025-09-30
+C000597,Female,73,Chonburi,Premium,2024-12-10
+C000598,Male,73,Nonthaburi,Premium,2025-08-12
+C000599,Female,30,Phuket,Mass,2025-02-12
+C000600,Female,50,Chiang Mai,Premium,2026-02-08
+C000601,Female,49,Bangkok,Mass,2024-11-22
+C000602,Female,50,Chiang Mai,Mass,2024-06-23
+C000603,Male,55,Pathum Thani,Mass,2025-08-18
+C000604,Male,36,Chiang Mai,SME,2026-04-12
+C000605,Female,36,Chonburi,Mass,2024-09-01
+C000606,Male,45,Nonthaburi,Premium,2025-09-28
+C000607,Female,66,Chiang Mai,Premium,2025-06-23
+C000608,Male,43,Bangkok,SME,2025-12-22
+C000609,Male,41,Chonburi,Premium,2025-11-18
+C000610,Male,42,Chonburi,Premium,2025-11-01
+C000611,Female,70,Chonburi,SME,2025-09-10
+C000612,Male,26,Bangkok,Premium,2024-07-31
+C000613,Female,68,Pathum Thani,SME,2026-04-30
+C000614,Female,66,Nonthaburi,Mass,2026-03-15
+C000615,Female,50,Bangkok,Mass,2025-01-26
+C000616,Male,26,Khon Kaen,Premium,2026-01-02
+C000617,Female,51,Chiang Mai,Mass,2025-08-22
+C000618,Male,38,Chonburi,Premium,2024-06-19
+C000619,Male,43,Chonburi,SME,2025-04-06
+C000620,Female,55,Pathum Thani,SME,2025-07-01
+C000621,Female,63,Chonburi,Premium,2025-06-21
+C000622,Female,70,Bangkok,Premium,2025-06-26
+C000623,Female,61,Bangkok,Premium,2026-04-28
+C000624,Female,68,Khon Kaen,SME,2025-01-24
+C000625,Male,56,Chiang Mai,Premium,2025-01-25
+C000626,Male,64,Bangkok,SME,2026-03-22
+C000627,Female,28,Chonburi,SME,2025-01-07
+C000628,Female,27,Phuket,SME,2026-02-23
+C000629,Male,20,Chonburi,SME,2026-02-18
+C000630,Male,30,Bangkok,Premium,2025-09-17
+C000631,Female,44,Nonthaburi,Premium,2025-11-08
+C000632,Male,44,Chonburi,SME,2025-06-09
+C000633,Female,73,Phuket,SME,2024-08-23
+C000634,Male,63,Nonthaburi,SME,2026-05-24
+C000635,Male,53,Pathum Thani,SME,2025-12-22
+C000636,Female,51,Chiang Mai,Premium,2025-06-05
+C000637,Male,47,Chonburi,Premium,2025-05-31
+C000638,Female,61,Phuket,SME,2024-12-10
+C000639,Female,57,Chiang Mai,Mass,2026-03-04
+C000640,Male,35,Chonburi,Premium,2024-10-12
+C000641,Male,37,Phuket,Premium,2024-09-26
+C000642,Male,62,Khon Kaen,Premium,2024-06-19
+C000643,Female,48,Pathum Thani,SME,2025-10-12
+C000644,Female,36,Bangkok,SME,2024-07-02
+C000645,Female,75,Chiang Mai,Premium,2024-09-29
+C000646,Male,36,Bangkok,Premium,2025-11-17
+C000647,Male,40,Chiang Mai,SME,2026-04-20
+C000648,Female,65,Chiang Mai,Mass,2024-06-26
+C000649,Male,70,Chonburi,Premium,2026-05-08
+C000650,Female,26,Bangkok,SME,2026-02-08
+C000651,Male,33,Bangkok,SME,2024-11-15
+C000652,Male,58,Nonthaburi,Mass,2025-11-24
+C000653,Male,44,Pathum Thani,SME,2025-02-15
+C000654,Female,24,Khon Kaen,Mass,2025-12-15
+C000655,Male,53,Nonthaburi,Premium,2024-10-06
+C000656,Female,48,Khon Kaen,Mass,2025-10-23
+C000657,Female,38,Pathum Thani,SME,2025-03-27
+C000658,Male,67,Bangkok,SME,2025-09-02
+C000659,Male,52,Khon Kaen,SME,2025-03-23
+C000660,Male,29,Chiang Mai,Mass,2024-11-21
+C000661,Male,71,Chiang Mai,Premium,2025-11-26
+C000662,Male,65,Phuket,Premium,2025-01-25
+C000663,Male,18,Pathum Thani,SME,2026-05-02
+C000664,Male,39,Pathum Thani,Premium,2025-09-14
+C000665,Female,74,Nonthaburi,SME,2024-12-30
+C000666,Female,35,Nonthaburi,Mass,2024-07-24
+C000667,Female,28,Khon Kaen,Premium,2025-07-08
+C000668,Female,63,Nonthaburi,Mass,2025-05-07
+C000669,Female,68,Pathum Thani,SME,2024-05-27
+C000670,Male,29,Chonburi,SME,2025-07-25
+C000671,Female,70,Chiang Mai,SME,2024-09-27
+C000672,Female,23,Chiang Mai,SME,2026-04-29
+C000673,Male,29,Nonthaburi,Premium,2025-08-30
+C000674,Female,33,Bangkok,Premium,2025-09-16
+C000675,Female,33,Chiang Mai,Premium,2026-01-17
+C000676,Female,37,Chonburi,SME,2025-03-13
+C000677,Male,34,Khon Kaen,Premium,2026-03-12
+C000678,Male,21,Khon Kaen,Mass,2025-01-01
+C000679,Female,37,Nonthaburi,Premium,2025-04-06
+C000680,Female,62,Bangkok,SME,2024-11-01
+C000681,Female,41,Chonburi,Mass,2026-03-30
+C000682,Male,26,Chiang Mai,Mass,2024-06-16
+C000683,Female,65,Chonburi,Premium,2024-12-14
+C000684,Female,62,Chonburi,Premium,2024-07-30
+C000685,Male,66,Nonthaburi,SME,2024-08-23
+C000686,Male,51,Chiang Mai,SME,2025-07-20
+C000687,Female,22,Chonburi,Mass,2025-10-25
+C000688,Male,71,Chonburi,SME,2025-04-07
+C000689,Male,54,Chonburi,Mass,2025-09-07
+C000690,Male,38,Phuket,SME,2024-12-11
+C000691,Female,25,Khon Kaen,Mass,2026-02-09
+C000692,Female,23,Chonburi,Premium,2026-02-17
+C000693,Male,47,Nonthaburi,SME,2025-12-27
+C000694,Female,47,Chonburi,Mass,2026-01-27
+C000695,Female,61,Phuket,Premium,2024-12-11
+C000696,Male,43,Pathum Thani,Mass,2026-01-23
+C000697,Male,55,Bangkok,Mass,2024-06-21
+C000698,Female,40,Khon Kaen,Mass,2025-11-15
+C000699,Male,75,Bangkok,Premium,2025-03-14
+C000700,Male,36,Chiang Mai,Mass,2024-06-26
+C000701,Male,67,Khon Kaen,SME,2024-06-20
+C000702,Female,41,Chiang Mai,Premium,2024-12-24
+C000703,Female,42,Bangkok,SME,2025-11-27
+C000704,Male,59,Phuket,Premium,2025-11-13
+C000705,Male,29,Chonburi,Premium,2025-09-15
+C000706,Male,64,Nonthaburi,Mass,2025-12-05
+C000707,Male,37,Chiang Mai,SME,2026-02-09
+C000708,Female,52,Chiang Mai,Mass,2025-05-19
+C000709,Male,47,Pathum Thani,Mass,2024-12-26
+C000710,Female,30,Khon Kaen,Mass,2026-02-18
+C000711,Male,69,Khon Kaen,Premium,2025-09-29
+C000712,Male,33,Nonthaburi,Mass,2025-04-07
+C000713,Male,56,Bangkok,Premium,2024-07-25
+C000714,Male,33,Khon Kaen,Mass,2025-12-16
+C000715,Female,46,Nonthaburi,SME,2025-04-23
+C000716,Male,66,Phuket,Mass,2025-12-29
+C000717,Male,50,Pathum Thani,Mass,2025-04-20
+C000718,Female,54,Chonburi,SME,2024-11-27
+C000719,Female,33,Pathum Thani,Mass,2025-06-28
+C000720,Male,44,Pathum Thani,Premium,2025-08-28
+C000721,Male,53,Chonburi,SME,2026-02-18
+C000722,Male,58,Khon Kaen,Premium,2026-04-19
+C000723,Female,21,Pathum Thani,SME,2026-03-06
+C000724,Female,68,Chonburi,Premium,2025-12-01
+C000725,Female,44,Nonthaburi,Premium,2026-01-17
+C000726,Female,29,Phuket,SME,2025-10-17
+C000727,Female,33,Phuket,Mass,2024-09-14
+C000728,Female,72,Khon Kaen,Mass,2024-06-26
+C000729,Female,21,Chonburi,Premium,2025-09-01
+C000730,Female,53,Chonburi,Mass,2025-02-20
+C000731,Female,33,Pathum Thani,Mass,2026-03-18
+C000732,Female,59,Bangkok,Premium,2025-05-07
+C000733,Female,23,Chonburi,SME,2026-04-30
+C000734,Male,21,Pathum Thani,Premium,2024-07-02
+C000735,Male,73,Bangkok,Mass,2024-07-06
+C000736,Male,48,Nonthaburi,Premium,2026-01-24
+C000737,Female,18,Nonthaburi,Mass,2024-11-16
+C000738,Male,65,Phuket,Premium,2026-03-10
+C000739,Male,62,Chonburi,SME,2025-04-11
+C000740,Male,43,Nonthaburi,SME,2025-06-08
+C000741,Female,67,Pathum Thani,Premium,2025-01-01
+C000742,Female,52,Khon Kaen,Premium,2025-05-21
+C000743,Female,34,Pathum Thani,SME,2025-03-16
+C000744,Female,47,Bangkok,SME,2025-07-22
+C000745,Female,66,Phuket,Premium,2024-08-30
+C000746,Male,41,Pathum Thani,Premium,2025-10-03
+C000747,Male,54,Phuket,Mass,2024-08-21
+C000748,Male,19,Pathum Thani,SME,2025-07-22
+C000749,Female,36,Nonthaburi,Mass,2024-10-14
+C000750,Female,32,Chiang Mai,SME,2025-11-11
+C000751,Male,49,Chonburi,SME,2024-12-04
+C000752,Female,34,Phuket,Premium,2025-08-02
+C000753,Female,47,Nonthaburi,SME,2024-08-26
+C000754,Female,28,Nonthaburi,SME,2024-06-11
+C000755,Female,29,Chonburi,SME,2025-11-26
+C000756,Male,51,Bangkok,Mass,2025-09-16
+C000757,Male,66,Bangkok,Premium,2024-07-18
+C000758,Male,71,Khon Kaen,Mass,2025-11-16
+C000759,Male,63,Nonthaburi,Mass,2024-10-22
+C000760,Male,50,Chiang Mai,Premium,2026-03-14
+C000761,Male,57,Khon Kaen,SME,2024-10-07
+C000762,Female,60,Chiang Mai,Mass,2025-04-09
+C000763,Male,52,Chonburi,Premium,2025-06-16
+C000764,Male,19,Chonburi,SME,2025-02-24
+C000765,Female,52,Pathum Thani,Mass,2024-08-28
+C000766,Female,69,Nonthaburi,Mass,2025-03-05
+C000767,Male,51,Nonthaburi,Mass,2026-02-24
+C000768,Male,57,Chonburi,Premium,2026-01-09
+C000769,Female,35,Phuket,Premium,2024-08-25
+C000770,Male,41,Chiang Mai,Premium,2025-01-12
+C000771,Male,62,Nonthaburi,Premium,2025-03-07
+C000772,Male,59,Phuket,SME,2026-04-19
+C000773,Male,23,Chiang Mai,Premium,2025-02-04
+C000774,Female,53,Chiang Mai,Mass,2025-04-04
+C000775,Male,62,Nonthaburi,Mass,2024-10-18
+C000776,Female,72,Chiang Mai,SME,2026-05-09
+C000777,Female,54,Phuket,Mass,2026-02-25
+C000778,Male,32,Nonthaburi,SME,2026-01-23
+C000779,Female,35,Bangkok,Mass,2024-08-14
+C000780,Female,75,Chonburi,SME,2025-05-31
+C000781,Male,29,Phuket,Premium,2024-12-20
+C000782,Male,31,Chonburi,Mass,2024-08-08
+C000783,Female,22,Pathum Thani,Mass,2024-11-05
+C000784,Male,54,Phuket,Premium,2024-10-05
+C000785,Female,42,Phuket,SME,2025-09-18
+C000786,Male,68,Khon Kaen,SME,2024-06-08
+C000787,Male,50,Khon Kaen,Premium,2025-01-31
+C000788,Male,24,Chiang Mai,Mass,2025-10-09
+C000789,Male,39,Chonburi,SME,2026-03-13
+C000790,Female,67,Pathum Thani,Mass,2025-05-26
+C000791,Female,68,Chiang Mai,Premium,2024-10-21
+C000792,Male,40,Chonburi,Premium,2026-04-28
+C000793,Female,29,Khon Kaen,SME,2026-05-14
+C000794,Female,23,Phuket,SME,2026-03-21
+C000795,Female,69,Nonthaburi,SME,2024-06-17
+C000796,Male,23,Pathum Thani,Mass,2025-11-24
+C000797,Female,63,Phuket,SME,2025-11-28
+C000798,Male,65,Chiang Mai,Premium,2025-04-13
+C000799,Female,24,Bangkok,Mass,2026-01-16
+C000800,Female,46,Pathum Thani,Premium,2025-04-08
+C000801,Male,26,Bangkok,Mass,2026-03-25
+C000802,Female,46,Chonburi,SME,2026-04-26
+C000803,Female,24,Bangkok,Mass,2024-06-25
+C000804,Female,53,Bangkok,SME,2024-11-12
+C000805,Female,73,Chiang Mai,Mass,2025-11-07
+C000806,Female,44,Chiang Mai,Mass,2025-04-20
+C000807,Male,54,Chonburi,Mass,2026-03-30
+C000808,Female,28,Nonthaburi,Premium,2025-01-19
+C000809,Female,35,Chiang Mai,Mass,2026-05-22
+C000810,Male,28,Chiang Mai,Premium,2026-03-16
+C000811,Female,37,Chiang Mai,Mass,2025-08-07
+C000812,Female,34,Nonthaburi,SME,2025-05-17
+C000813,Female,56,Chonburi,Mass,2024-07-17
+C000814,Female,24,Nonthaburi,Premium,2025-10-29
+C000815,Male,43,Pathum Thani,SME,2025-08-01
+C000816,Female,69,Phuket,Premium,2026-02-03
+C000817,Female,39,Chiang Mai,SME,2025-01-29
+C000818,Male,37,Pathum Thani,SME,2025-07-16
+C000819,Male,48,Pathum Thani,Mass,2024-08-08
+C000820,Female,38,Pathum Thani,SME,2025-07-19
+C000821,Female,54,Phuket,Mass,2024-06-12
+C000822,Female,42,Pathum Thani,Premium,2025-07-31
+C000823,Female,25,Chonburi,Mass,2025-05-27
+C000824,Male,61,Phuket,SME,2026-05-05
+C000825,Male,64,Chiang Mai,SME,2025-07-28
+C000826,Male,46,Phuket,Premium,2025-05-19
+C000827,Male,70,Phuket,Premium,2024-09-07
+C000828,Female,26,Khon Kaen,Premium,2025-09-19
+C000829,Male,34,Khon Kaen,Mass,2026-01-23
+C000830,Female,68,Chiang Mai,Mass,2025-08-11
+C000831,Female,56,Chiang Mai,SME,2025-07-04
+C000832,Female,52,Chonburi,SME,2024-07-06
+C000833,Female,52,Bangkok,Premium,2025-04-08
+C000834,Male,24,Phuket,Mass,2025-06-07
+C000835,Female,28,Khon Kaen,SME,2026-03-14
+C000836,Male,54,Khon Kaen,SME,2025-07-22
+C000837,Female,66,Pathum Thani,Premium,2026-05-22
+C000838,Male,18,Bangkok,Premium,2025-07-13
+C000839,Male,50,Khon Kaen,SME,2025-08-14
+C000840,Male,46,Pathum Thani,Premium,2024-08-17
+C000841,Female,67,Khon Kaen,SME,2026-04-14
+C000842,Male,40,Bangkok,Premium,2025-07-01
+C000843,Male,36,Chiang Mai,Mass,2025-10-21
+C000844,Male,71,Khon Kaen,Mass,2025-09-01
+C000845,Female,37,Pathum Thani,Premium,2025-03-31
+C000846,Male,51,Chiang Mai,Premium,2026-04-04
+C000847,Female,24,Chiang Mai,SME,2025-06-10
+C000848,Female,38,Bangkok,Premium,2026-05-07
+C000849,Male,69,Khon Kaen,Mass,2025-05-07
+C000850,Male,72,Pathum Thani,SME,2024-07-07
+C000851,Male,61,Phuket,Mass,2025-04-08
+C000852,Male,51,Nonthaburi,SME,2026-01-04
+C000853,Male,39,Chonburi,Premium,2025-12-30
+C000854,Female,32,Phuket,Premium,2025-07-04
+C000855,Male,29,Khon Kaen,SME,2026-01-18
+C000856,Female,43,Bangkok,SME,2024-06-23
+C000857,Male,46,Chonburi,Premium,2024-11-16
+C000858,Female,18,Khon Kaen,Mass,2024-06-28
+C000859,Male,35,Phuket,SME,2024-12-17
+C000860,Male,54,Bangkok,SME,2026-04-25
+C000861,Male,41,Pathum Thani,Mass,2025-04-15
+C000862,Female,25,Pathum Thani,SME,2025-06-22
+C000863,Female,51,Khon Kaen,Premium,2026-01-25
+C000864,Female,57,Chiang Mai,SME,2025-12-23
+C000865,Male,40,Pathum Thani,Premium,2026-04-23
+C000866,Male,70,Khon Kaen,SME,2025-07-01
+C000867,Female,57,Chonburi,Mass,2025-09-10
+C000868,Male,38,Bangkok,Mass,2026-04-17
+C000869,Female,25,Nonthaburi,Premium,2025-06-29
+C000870,Male,50,Chiang Mai,Premium,2025-09-09
+C000871,Male,54,Chiang Mai,Premium,2024-11-06
+C000872,Male,49,Khon Kaen,SME,2026-02-26
+C000873,Male,53,Nonthaburi,Premium,2026-04-08
+C000874,Female,26,Nonthaburi,Premium,2025-01-18
+C000875,Female,57,Bangkok,Premium,2025-09-02
+C000876,Male,49,Nonthaburi,Mass,2024-06-11
+C000877,Female,53,Chonburi,SME,2025-07-18
+C000878,Female,44,Khon Kaen,Premium,2024-08-20
+C000879,Female,63,Phuket,Premium,2024-07-25
+C000880,Female,28,Bangkok,SME,2026-02-14
+C000881,Male,68,Phuket,Mass,2025-10-02
+C000882,Female,20,Pathum Thani,Mass,2025-07-10
+C000883,Female,28,Phuket,Premium,2025-05-28
+C000884,Female,53,Chonburi,Mass,2024-11-01
+C000885,Male,35,Phuket,SME,2025-06-02
+C000886,Female,52,Phuket,Mass,2025-08-04
+C000887,Female,52,Nonthaburi,Premium,2026-05-22
+C000888,Male,65,Phuket,SME,2024-09-28
+C000889,Male,37,Phuket,Mass,2024-08-29
+C000890,Female,34,Pathum Thani,Mass,2025-09-08
+C000891,Female,73,Bangkok,Mass,2024-05-24
+C000892,Male,69,Khon Kaen,SME,2025-07-12
+C000893,Female,73,Khon Kaen,SME,2026-04-08
+C000894,Female,28,Chonburi,Mass,2026-03-12
+C000895,Male,70,Nonthaburi,Mass,2025-05-03
+C000896,Female,52,Pathum Thani,SME,2025-08-16
+C000897,Male,38,Khon Kaen,Premium,2026-05-15
+C000898,Female,54,Pathum Thani,SME,2024-06-22
+C000899,Male,26,Phuket,Premium,2025-04-24
+C000900,Male,35,Phuket,SME,2024-06-15
+C000901,Male,62,Phuket,Mass,2026-03-21
+C000902,Male,27,Khon Kaen,Premium,2024-08-01
+C000903,Male,66,Phuket,SME,2026-01-25
+C000904,Female,49,Nonthaburi,SME,2024-08-11
+C000905,Female,58,Chiang Mai,Premium,2025-02-11
+C000906,Female,22,Khon Kaen,Mass,2026-04-04
+C000907,Female,50,Khon Kaen,Premium,2025-06-18
+C000908,Female,47,Chiang Mai,Premium,2024-11-29
+C000909,Male,73,Phuket,SME,2025-04-28
+C000910,Male,64,Chiang Mai,SME,2026-01-12
+C000911,Female,72,Bangkok,SME,2025-09-05
+C000912,Female,31,Chiang Mai,Mass,2025-08-28
+C000913,Female,35,Pathum Thani,Premium,2025-07-22
+C000914,Female,53,Chonburi,Mass,2025-03-22
+C000915,Female,68,Pathum Thani,SME,2026-05-02
+C000916,Male,20,Bangkok,SME,2024-09-06
+C000917,Female,19,Bangkok,Mass,2025-02-07
+C000918,Female,47,Bangkok,Premium,2024-06-01
+C000919,Male,62,Nonthaburi,SME,2025-09-11
+C000920,Female,28,Phuket,Premium,2025-02-09
+C000921,Male,59,Pathum Thani,Premium,2024-10-22
+C000922,Male,41,Khon Kaen,SME,2026-02-23
+C000923,Male,21,Chiang Mai,SME,2025-03-12
+C000924,Female,64,Khon Kaen,Mass,2024-07-13
+C000925,Female,59,Bangkok,SME,2025-06-08
+C000926,Male,18,Nonthaburi,Premium,2024-12-13
+C000927,Male,26,Chonburi,Mass,2025-05-17
+C000928,Female,18,Bangkok,SME,2025-11-03
+C000929,Female,70,Bangkok,Premium,2024-09-21
+C000930,Male,48,Bangkok,Mass,2026-04-10
+C000931,Female,23,Khon Kaen,Mass,2024-10-09
+C000932,Male,38,Pathum Thani,Premium,2026-04-16
+C000933,Male,42,Phuket,Mass,2025-12-30
+C000934,Male,22,Chonburi,SME,2026-03-06
+C000935,Male,57,Khon Kaen,Mass,2024-08-30
+C000936,Female,40,Khon Kaen,Mass,2025-06-26
+C000937,Male,44,Chonburi,SME,2024-09-20
+C000938,Female,73,Nonthaburi,Mass,2024-09-02
+C000939,Male,26,Phuket,Mass,2025-04-02
+C000940,Female,40,Chiang Mai,Premium,2024-06-08
+C000941,Male,33,Pathum Thani,SME,2026-02-15
+C000942,Male,33,Chonburi,SME,2025-12-02
+C000943,Female,67,Khon Kaen,Mass,2024-06-22
+C000944,Female,31,Chonburi,SME,2024-07-16
+C000945,Male,65,Chiang Mai,Premium,2024-06-12
+C000946,Male,68,Phuket,Mass,2025-01-29
+C000947,Female,42,Bangkok,Mass,2025-02-01
+C000948,Female,58,Chonburi,Mass,2024-09-06
+C000949,Male,41,Pathum Thani,Mass,2024-08-28
+C000950,Female,73,Phuket,SME,2025-10-12
+C000951,Female,41,Chonburi,SME,2024-07-15
+C000952,Male,66,Chiang Mai,Mass,2025-07-17
+C000953,Male,55,Bangkok,Mass,2024-11-07
+C000954,Female,31,Bangkok,Mass,2025-09-29
+C000955,Female,50,Pathum Thani,SME,2026-05-07
+C000956,Female,45,Khon Kaen,Premium,2024-10-03
+C000957,Male,58,Chonburi,SME,2025-04-26
+C000958,Male,35,Bangkok,Premium,2024-08-13
+C000959,Male,50,Nonthaburi,Mass,2024-09-12
+C000960,Female,43,Chonburi,SME,2025-12-31
+C000961,Male,37,Khon Kaen,Premium,2024-07-12
+C000962,Male,21,Nonthaburi,Mass,2025-11-20
+C000963,Female,25,Chiang Mai,SME,2026-02-21
+C000964,Male,37,Khon Kaen,SME,2025-05-04
+C000965,Male,25,Bangkok,SME,2025-10-27
+C000966,Male,62,Bangkok,Mass,2026-05-16
+C000967,Female,40,Chonburi,SME,2025-06-02
+C000968,Female,28,Pathum Thani,Mass,2025-01-01
+C000969,Female,64,Bangkok,Mass,2025-06-06
+C000970,Female,69,Chiang Mai,Premium,2026-02-08
+C000971,Male,34,Khon Kaen,SME,2025-04-09
+C000972,Male,49,Chiang Mai,SME,2025-12-08
+C000973,Female,21,Chiang Mai,SME,2024-12-13
+C000974,Male,41,Nonthaburi,Premium,2025-09-06
+C000975,Male,75,Chonburi,SME,2025-09-21
+C000976,Male,32,Khon Kaen,SME,2024-07-01
+C000977,Male,20,Phuket,Mass,2025-05-20
+C000978,Male,20,Chiang Mai,Premium,2024-10-13
+C000979,Female,27,Nonthaburi,Mass,2025-03-12
+C000980,Female,32,Pathum Thani,Mass,2025-07-07
+C000981,Female,64,Pathum Thani,Premium,2024-06-07
+C000982,Male,54,Pathum Thani,Mass,2024-06-19
+C000983,Male,29,Nonthaburi,SME,2025-05-22
+C000984,Male,43,Bangkok,Premium,2025-01-04
+C000985,Female,67,Phuket,Premium,2026-05-15
+C000986,Female,23,Chonburi,Premium,2025-10-19
+C000987,Male,41,Nonthaburi,Premium,2024-10-18
+C000988,Female,65,Chonburi,Mass,2025-12-03
+C000989,Female,41,Chonburi,Premium,2024-12-16
+C000990,Male,64,Chonburi,Mass,2025-12-21
+C000991,Male,18,Chiang Mai,Mass,2025-06-07
+C000992,Male,52,Pathum Thani,SME,2025-11-09
+C000993,Male,39,Bangkok,SME,2024-05-31
+C000994,Female,72,Khon Kaen,SME,2025-10-29
+C000995,Female,24,Nonthaburi,SME,2025-09-06
+C000996,Male,44,Chiang Mai,Mass,2026-04-06
+C000997,Male,63,Pathum Thani,Mass,2026-01-14
+C000998,Male,32,Phuket,SME,2025-11-19
+C000999,Female,62,Pathum Thani,Premium,2025-07-24
+C001000,Male,55,Bangkok,SME,2024-12-29
