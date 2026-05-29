@@ -1,3 +1,13 @@
 .venv/
 __pycache__/
 *.pyc
+.env
+.env.local
+*.log
+.DS_Store
+Thumbs.db
+
+# Optional: keep or ignore local exports
+exports/
+temp/
+archive/
