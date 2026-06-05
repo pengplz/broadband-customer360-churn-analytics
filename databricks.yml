@@ -4,8 +4,16 @@ bundle:
 include:
   - resources/*.yml
 
+variables:
+  cluster_id:
+    description: Existing Databricks cluster ID used to run notebook tasks.
+    default: "2a3903cc3bb2aeb4"
+
+  notebook_root_path:
+    description: Workspace folder where your notebooks are stored.
+    default: /Workspace/Users/pengplz@hotmail.com/notebooks
+
 targets:
   dev:
+    mode: development
     default: true
-    workspace:
-      host: https://dbc-847b4594-87fe.cloud.databricks.com
