@@ -13,7 +13,6 @@ resources:
 
       tasks:
         - task_key: autoloader_unified_raw_payload
-          existing_cluster_id: ${var.cluster_id}
           notebook_task:
             notebook_path: ${var.notebook_root_path}/11_autoloader_unified_raw_payload
             base_parameters:
@@ -24,7 +23,6 @@ resources:
         - task_key: create_deduped_bronze_payload
           depends_on:
             - task_key: autoloader_unified_raw_payload
-          existing_cluster_id: ${var.cluster_id}
           notebook_task:
             notebook_path: ${var.notebook_root_path}/13_create_deduped_bronze_payload
             base_parameters:
@@ -34,16 +32,66 @@ resources:
         - task_key: scd2_merge_update_logic
           depends_on:
             - task_key: create_deduped_bronze_payload
-          existing_cluster_id: ${var.cluster_id}
           notebook_task:
             notebook_path: ${var.notebook_root_path}/19_scd2_merge_update_logic
             base_parameters:
               catalog: "{{job.parameters.catalog}}"
 
-        - task_key: extract_cdf_records
+        - task_key: data_quality_contracts_gates
+          description: Run production-grade data quality contracts and gate decision
           depends_on:
             - task_key: scd2_merge_update_logic
-          existing_cluster_id: ${var.cluster_id}
+          max_retries: 0
+          min_retry_interval_millis: 0
+          retry_on_timeout: false
+          timeout_seconds: 1800
+          notebook_task:
+            notebook_path: ${var.notebook_root_path}/38_data_quality_contracts_gates
+            base_parameters:
+              catalog: "{{job.parameters.catalog}}"
+              dq_batch_id: "JOB_DQ_CONTRACTS"
+
+        - task_key: dq_gate_status
+          description: Publish DQ gate status as task value
+          depends_on:
+            - task_key: data_quality_contracts_gates
+          max_retries: 0
+          min_retry_interval_millis: 0
+          retry_on_timeout: false
+          timeout_seconds: 600
+          notebook_task:
+            notebook_path: ${var.notebook_root_path}/39_dq_gate_workflow_integration
+            base_parameters:
+              catalog: "{{job.parameters.catalog}}"
+              integration_batch_id: "JOB_DQ_GATE_INTEGRATION"
+
+        - task_key: continue_if_dq_not_blocked
+          description: Continue only when DQ gate is not BLOCK
+          depends_on:
+            - task_key: dq_gate_status
+          condition_task:
+            op: NOT_EQUAL
+            left: "{{tasks.dq_gate_status.values.dq_gate_status}}"
+            right: "BLOCK"
+
+        - task_key: dq_blocked_pipeline_audit
+          description: Record DQ-blocked pipeline event
+          depends_on:
+            - task_key: continue_if_dq_not_blocked
+              outcome: "false"
+          run_if: ALL_SUCCESS
+          max_retries: 0
+          timeout_seconds: 600
+          notebook_task:
+            notebook_path: ${var.notebook_root_path}/40_dq_blocked_pipeline_audit
+            base_parameters:
+              catalog: "{{job.parameters.catalog}}"
+              blocked_batch_id: "JOB_DQ_BLOCKED"
+
+        - task_key: extract_cdf_records
+          depends_on:
+            - task_key: continue_if_dq_not_blocked
+              outcome: "true"
           notebook_task:
             notebook_path: ${var.notebook_root_path}/27_extract_cdf_records
             base_parameters:
@@ -53,7 +101,6 @@ resources:
         - task_key: build_cdc_processing_queue
           depends_on:
             - task_key: extract_cdf_records
-          existing_cluster_id: ${var.cluster_id}
           notebook_task:
             notebook_path: ${var.notebook_root_path}/28_build_cdc_processing_queue
             base_parameters:
@@ -62,7 +109,6 @@ resources:
         - task_key: refresh_current_snapshot
           depends_on:
             - task_key: build_cdc_processing_queue
-          existing_cluster_id: ${var.cluster_id}
           notebook_task:
             notebook_path: ${var.notebook_root_path}/29_cdc_current_snapshot_refresh
             base_parameters:
