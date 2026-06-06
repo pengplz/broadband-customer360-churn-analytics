@@ -1,0 +1,69 @@
+resources:
+  jobs:
+    broadband_customer360_production_workflow:
+      name: broadband_customer360_production_workflow
+
+      parameters:
+        - name: catalog
+          default: dev_broadband
+        - name: source_subject
+          default: ALL
+        - name: reset_stream
+          default: "false"
+
+      tasks:
+        - task_key: autoloader_unified_raw_payload
+          existing_cluster_id: ${var.cluster_id}
+          notebook_task:
+            notebook_path: ${var.notebook_root_path}/11_autoloader_unified_raw_payload
+            base_parameters:
+              catalog: "{{job.parameters.catalog}}"
+              source_subject: "{{job.parameters.source_subject}}"
+              reset_stream: "{{job.parameters.reset_stream}}"
+
+        - task_key: create_deduped_bronze_payload
+          depends_on:
+            - task_key: autoloader_unified_raw_payload
+          existing_cluster_id: ${var.cluster_id}
+          notebook_task:
+            notebook_path: ${var.notebook_root_path}/13_create_deduped_bronze_payload
+            base_parameters:
+              catalog: "{{job.parameters.catalog}}"
+              source_subject: "{{job.parameters.source_subject}}"
+
+        - task_key: scd2_merge_update_logic
+          depends_on:
+            - task_key: create_deduped_bronze_payload
+          existing_cluster_id: ${var.cluster_id}
+          notebook_task:
+            notebook_path: ${var.notebook_root_path}/19_scd2_merge_update_logic
+            base_parameters:
+              catalog: "{{job.parameters.catalog}}"
+
+        - task_key: extract_cdf_records
+          depends_on:
+            - task_key: scd2_merge_update_logic
+          existing_cluster_id: ${var.cluster_id}
+          notebook_task:
+            notebook_path: ${var.notebook_root_path}/27_extract_cdf_records
+            base_parameters:
+              catalog: "{{job.parameters.catalog}}"
+              start_from_baseline_plus_one: "true"
+
+        - task_key: build_cdc_processing_queue
+          depends_on:
+            - task_key: extract_cdf_records
+          existing_cluster_id: ${var.cluster_id}
+          notebook_task:
+            notebook_path: ${var.notebook_root_path}/28_build_cdc_processing_queue
+            base_parameters:
+              catalog: "{{job.parameters.catalog}}"
+
+        - task_key: refresh_current_snapshot
+          depends_on:
+            - task_key: build_cdc_processing_queue
+          existing_cluster_id: ${var.cluster_id}
+          notebook_task:
+            notebook_path: ${var.notebook_root_path}/29_cdc_current_snapshot_refresh
+            base_parameters:
+              catalog: "{{job.parameters.catalog}}"
