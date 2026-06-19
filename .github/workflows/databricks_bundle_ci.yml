@@ -2,6 +2,20 @@
 
 on:
   workflow_dispatch:
+    inputs:
+      deploy_target:
+        description: "Deployment target"
+        required: true
+        default: "dev"
+        type: choice
+        options:
+          - dev
+          - test
+      run_smoke_test:
+        description: "Run Databricks bundle smoke test after deployment"
+        required: true
+        default: false
+        type: boolean
 
   pull_request:
     branches:
@@ -11,54 +25,224 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
+concurrency:
+  group: databricks-bundle-ci-${{ github.ref }}-${{ github.event.inputs.deploy_target || 'dev' }}
+  cancel-in-progress: true
+
+env:
+  BUNDLE_JOB_NAME: broadband_customer360_job
+
 jobs:
   validate-bundle:
-    name: Validate Databricks Bundle
+    name: Validate Bundle
     runs-on: ubuntu-latest
 
     env:
-      DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
-      DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+      VALIDATION_TARGET: ${{ github.event.inputs.deploy_target || 'dev' }}
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate repository structure
+        run: |
+          mkdir -p cicd_logs
+          python scripts/cicd/validate_repo_structure.py 2>&1 | tee cicd_logs/repo_structure_validation.log
+
+      - name: Validate YAML syntax
+        run: |
+          pip install pyyaml
+          python - <<'PY' 2>&1 | tee cicd_logs/yaml_validation.log
+          from pathlib import Path
+          import yaml
+
+          yaml_files = [
+              Path("databricks.yml"),
+              Path("resources/jobs/broadband_customer360_job.yml"),
+              Path(".github/workflows/databricks_bundle_ci.yml"),
+          ]
+
+          for file_path in yaml_files:
+              if not file_path.exists():
+                  raise FileNotFoundError(f"Missing YAML file: {file_path}")
+              with file_path.open("r", encoding="utf-8") as f:
+                  yaml.safe_load(f)
+              print(f"PASS YAML: {file_path}")
+          PY
+
       - name: Setup Databricks CLI
         uses: databricks/setup-cli@main
 
-      - name: Validate repo structure
-        run: python scripts/cicd/validate_repo_structure.py
+      - name: Validate Databricks bundle
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+        run: |
+          mkdir -p cicd_logs
+          echo "Validating bundle target: $VALIDATION_TARGET"
+          databricks bundle validate -t "$VALIDATION_TARGET" 2>&1 | tee cicd_logs/bundle_validate.log
 
-      - name: Validate bundle
-        run: databricks bundle validate -t dev
+      - name: Upload validation logs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bundle-validation-logs
+          path: cicd_logs/
+          if-no-files-found: warn
 
   deploy-dev:
     name: Deploy Bundle to Dev
     runs-on: ubuntu-latest
     needs: validate-bundle
 
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: |
+      (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.deploy_target == 'dev')
 
     environment:
       name: dev
 
     env:
-      DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
-      DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+      BUNDLE_TARGET: dev
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Check required Databricks secrets
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+        run: |
+          mkdir -p cicd_logs
+
+          if [ -z "$DATABRICKS_HOST" ]; then
+            echo "DATABRICKS_HOST is missing." | tee cicd_logs/secret_check.log
+            exit 1
+          fi
+
+          if [ -z "$DATABRICKS_TOKEN" ]; then
+            echo "DATABRICKS_TOKEN is missing." | tee cicd_logs/secret_check.log
+            exit 1
+          fi
+
+          echo "Required Databricks secrets are configured." | tee cicd_logs/secret_check.log
+
       - name: Setup Databricks CLI
         uses: databricks/setup-cli@main
 
       - name: Deploy bundle to dev
-        run: databricks bundle deploy -t dev
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+        run: |
+          databricks bundle deploy -t "$BUNDLE_TARGET" 2>&1 | tee cicd_logs/bundle_deploy_dev.log
+
+      - name: Optional smoke test
+        if: github.event.inputs.run_smoke_test == 'true' || vars.RUN_DATABRICKS_SMOKE_TEST == 'true'
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+        run: |
+          databricks bundle run "$BUNDLE_JOB_NAME" -t "$BUNDLE_TARGET" 2>&1 | tee cicd_logs/bundle_smoke_test.log
 
       - name: Deployment summary
         run: |
-          echo "Databricks bundle deployed to dev."
-          echo "Bundle target: dev"
-          echo "Git SHA: $GITHUB_SHA"
+          echo "Databricks bundle deployment summary" | tee cicd_logs/deployment_summary.log
+          echo "Target: $BUNDLE_TARGET" | tee -a cicd_logs/deployment_summary.log
+          echo "Job: $BUNDLE_JOB_NAME" | tee -a cicd_logs/deployment_summary.log
+          echo "Git SHA: $GITHUB_SHA" | tee -a cicd_logs/deployment_summary.log
+          echo "Triggered by: $GITHUB_ACTOR" | tee -a cicd_logs/deployment_summary.log
+
+      - name: Upload deployment logs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bundle-dev-deployment-logs
+          path: cicd_logs/
+          if-no-files-found: warn
+
+  deploy-test:
+    name: Deploy Bundle to Test
+    runs-on: ubuntu-latest
+    needs: validate-bundle
+
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.deploy_target == 'test'
+
+    environment:
+      name: test
+
+    env:
+      BUNDLE_TARGET: test
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required Databricks secrets
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+        run: |
+          mkdir -p cicd_logs
+
+          if [ -z "$DATABRICKS_HOST" ]; then
+            echo "DATABRICKS_HOST is missing." | tee cicd_logs/secret_check.log
+            exit 1
+          fi
+
+          if [ -z "$DATABRICKS_TOKEN" ]; then
+            echo "DATABRICKS_TOKEN is missing." | tee cicd_logs/secret_check.log
+            exit 1
+          fi
+
+          echo "Required Databricks secrets are configured." | tee cicd_logs/secret_check.log
+
+      - name: Setup Databricks CLI
+        uses: databricks/setup-cli@main
+
+      - name: Validate test target again before deploy
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+        run: |
+          databricks bundle validate -t "$BUNDLE_TARGET" 2>&1 | tee cicd_logs/bundle_validate_test.log
+
+      - name: Deploy bundle to test
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+        run: |
+          databricks bundle deploy -t "$BUNDLE_TARGET" 2>&1 | tee cicd_logs/bundle_deploy_test.log
+
+      - name: Optional test smoke test
+        if: github.event.inputs.run_smoke_test == 'true'
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+        run: |
+          databricks bundle run "$BUNDLE_JOB_NAME" -t "$BUNDLE_TARGET" 2>&1 | tee cicd_logs/bundle_smoke_test_test.log
+
+      - name: Test deployment summary
+        run: |
+          echo "Databricks bundle test deployment summary" | tee cicd_logs/test_deployment_summary.log
+          echo "Target: $BUNDLE_TARGET" | tee -a cicd_logs/test_deployment_summary.log
+          echo "Job: $BUNDLE_JOB_NAME" | tee -a cicd_logs/test_deployment_summary.log
+          echo "Git SHA: $GITHUB_SHA" | tee -a cicd_logs/test_deployment_summary.log
+          echo "Triggered by: $GITHUB_ACTOR" | tee -a cicd_logs/test_deployment_summary.log
+
+      - name: Upload test deployment logs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bundle-test-deployment-logs
+          path: cicd_logs/
+          if-no-files-found: warn
